@@ -1,27 +1,27 @@
 export const headerLinks = [
   {
-    label: 'Home',
-    route: '/',
+    label: "Ana Sayfa",
+    route: "/",
   },
   {
-    label: 'Create Event',
-    route: '/events/create',
+    label: "Etkinlik ekle",
+    route: "/events/create",
   },
   {
-    label: 'My Profile',
-    route: '/profile',
+    label: "Profil",
+    route: "/profile",
   },
-]
+];
 
 export const eventDefaultValues = {
-  title: '',
-  description: '',
-  location: '',
-  imageUrl: '',
+  title: "",
+  description: "",
+  location: "",
+  imageUrl: "",
   startDateTime: new Date(),
   endDateTime: new Date(),
-  categoryId: '',
-  price: '',
+  categoryId: "",
+  price: "",
   isFree: false,
-  url: '',
-}
+  url: "",
+};
