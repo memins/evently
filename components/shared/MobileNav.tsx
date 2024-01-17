@@ -1,27 +1,33 @@
-import React from "react";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { Separator } from "@/components/ui/separator";
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet"
+import Image from "next/image"
+import { Separator } from "../ui/separator"
+import NavItems from "./NavItems"
 
-import Image from "next/image";
-import NavItems from "./NavItems";
 
 const MobileNav = () => {
   return (
     <nav className="md:hidden">
       <Sheet>
         <SheetTrigger className="align-middle">
-          <Image
+          <Image 
             src="/assets/icons/menu.svg"
-            alt="Menu"
+            alt="menu"
             width={24}
             height={24}
             className="cursor-pointer"
           />
         </SheetTrigger>
         <SheetContent className="flex flex-col gap-6 bg-white md:hidden">
-          <Image
+          <Image 
             src="/assets/images/logo.svg"
-            alt="Evently logo"
+            alt="logo"
             width={128}
             height={38}
           />
@@ -30,7 +36,7 @@ const MobileNav = () => {
         </SheetContent>
       </Sheet>
     </nav>
-  );
-};
+  )
+}
 
-export default MobileNav;
+export default MobileNav
