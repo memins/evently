@@ -345,7 +345,7 @@ const EventForm = ({ userId, type, event, eventId }: EventFormProps) => {
                     />
 
                     <Input
-                      placeholder="URL"
+                      placeholder="URL (https://...)"
                       {...field}
                       className="input-field"
                     />
